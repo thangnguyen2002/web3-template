@@ -1,6 +1,7 @@
 @media screen and (max-width: 600px) {
     .container{
         flex-direction: column;
+        width: 91%;
     }
 
     .container .container__sidebar{
