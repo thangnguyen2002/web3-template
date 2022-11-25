@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* --root{
+    --gray: #8f8ba1;
+    --gray2: #666666;
+    --green: #009688;
+} */
+
+.words--color--gray{
+    color: #8f8ba1;
+}
+
+.words--color--gray2{
+    color: #666666;
+}
+
+.words--color--green{
+    color: #009688;
+}
+
+/* Container */
+.container{
+    /* background-color: red; */
+    width: 97%;
+    height: auto;
+    /* margin: 15px auto 0; */
+    /* tren traiphai duoi */
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sidebar */
+.container .container__sidebar{
+    /* background-color: pink; */
+    flex: 1;
+    /* flex de chia ty le cho cac child cua display:flex dc khai bao o parent */
+    /* co flex: ti le thi ko can phai xet width height cho background
+    nhung nen xet height: auto de cho no tu dieu chinh theo content trong do' */
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 3px 5px 8px 3px #ccc;
+}
+
+.container .container__sidebar .container__sidebar--img{
+    position: relative;
+    width: 100%;
+}
+
+.container .container__sidebar .container__sidebar--img img{
+    width: 100%;
+}
+
+.container .container__sidebar .container__sidebar--img h1{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-weight: 500;
+}
+
+/* Sidebar--Infor */
+.container .container__sidebar .container__sidebar--infor ul{
+    margin: 0 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+    /* tao khoang cach giua border va content -> padding */
+}
+
+.container .container__sidebar .container__sidebar--infor ul li{
+    list-style: none;
+    margin-top: 15px;
+}
+
+.container .container__sidebar .container__sidebar--infor ul li i{
+    margin-right: 20px;
+}
+
+/* Sidebar--Skills */
+.container .container__sidebar .container__sidebar--skills .container__sidebar--skills-heading{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.container .container__sidebar .container__sidebar--skills .container__sidebar--skills-heading i{
+    font-size: 19.5px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.container .container__sidebar .container__sidebar--skills .container__sidebar--skills-heading h2{
+    font-size: 19.5px;
+    font-weight: 600;
+}
+
+.container .container__sidebar .container__sidebar--skills .container__sidebar--skills-content ul li{
+    list-style: none;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.container .container__sidebar .container__sidebar--skills .container__sidebar--skills-content ul li p{
+    margin-bottom: 20px;
+}
+
+.container .container__sidebar .container__sidebar--skills .container__sidebar--skills-content ul li div{
+    background-color: #eee;
+    border-radius: 10px;
+    margin-right: 15px;
+    position: relative;
+    height: 20px;
+}
+
+.container .container__sidebar .container__sidebar--skills .container__sidebar--skills-content ul li div span{
+    height: 20px;
+    /* width: 100px; */
+    background-color: #009688;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.container .container__sidebar .container__sidebar--skills .container__sidebar--skills-content ul li div span p{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container .container__sidebar .container__sidebar--skills .container__sidebar--skills-content ul li:nth-child(1) div span{
+    width: 90%;
+}
+
+.container .container__sidebar .container__sidebar--skills .container__sidebar--skills-content ul li:nth-child(2) div span{
+    width: 80%;
+}
+.container .container__sidebar .container__sidebar--skills .container__sidebar--skills-content ul li:nth-child(3) div span{
+    width: 75%;
+}
+.container .container__sidebar .container__sidebar--skills .container__sidebar--skills-content ul li:nth-child(4) div span{
+    width: 50%;
+}
+
+/* Sidebar--Languages */
+.container .container__sidebar .container__sidebar--languages .container__sidebar--languages-heading{
+    display: flex;
+    margin-top: 50px;
+}
+
+.container .container__sidebar .container__sidebar--languages .container__sidebar--languages-heading i{
+    font-size: 19.5px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.container .container__sidebar .container__sidebar--languages .container__sidebar--languages-heading h2{
+    font-size: 19.5px;
+    font-weight: 600;
+}
+
+.container .container__sidebar .container__sidebar--languages .container__sidebar--languages-content ul{
+    list-style: none;
+    margin: 20px 15px;
+}
+
+.container .container__sidebar .container__sidebar--languages .container__sidebar--languages-content ul li{
+    margin-top: 15px;
+}
+
+.container .container__sidebar .container__sidebar--languages .container__sidebar--languages-content ul li p{
+    margin-bottom: 20px;
+}
+
+.container .container__sidebar .container__sidebar--languages .container__sidebar--languages-content ul li div{
+    background-color: #eee;
+    border-radius: 10px;
+    position: relative;
+    height: 24px;
+}
+
+.container .container__sidebar .container__sidebar--languages .container__sidebar--languages-content ul li div span{
+    height: 24px;
+    /* width: 100px; */
+    background-color: #009688;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.container .container__sidebar .container__sidebar--languages .container__sidebar--languages-content ul li:nth-child(1) div span{
+    width: 100%;
+}
+
+.container .container__sidebar .container__sidebar--languages .container__sidebar--languages-content ul li:nth-child(2) div span{
+    width: 50%;
+}
+
+.container .container__sidebar .container__sidebar--languages .container__sidebar--languages-content ul li:nth-child(3) div span{
+    width: 30%;
+}
+
+/* Content */
+.container .container__content{
+    /* background-color: blue; */
+    flex: 2;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+/* Exp */
+.container .container__content .container__content--experience{
+    /* background-color: green; */
+    box-shadow: 3px 5px 20px 5px #ccc;
+    flex: 1;
+    height: auto;
+    margin-bottom: 20px;
+    padding-top: 28px;
+}
+/* Exp-Heading */
+.container .container__content .container__content--experience--heading{
+    display: flex;
+    margin-left: 20px;
+}
+
+.container .container__content .container__content--experience--heading i{
+    font-size: 37px;
+    margin-right: 25px;
+}
+
+.container .container__content .container__content--experience--heading h1{
+    font-weight: 500;
+    background: linear-gradient(to top right, rgb(213, 92, 112), purple);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    /* cac tien to webkit, moz, o,... la de support tung trinh duyet khac nhau de no co the su dung background-clip  */
+    -webkit-text-fill-color: transparent;
+}
+/* Exp-Content */
+.container .container__content .container__content--experience--content{
+    margin: 45px 35px;
+}
+
+.container .container__content .container__content--experience--content .container__content--experience--content--frontEnd .container__content--experience--content--frontEnd-infor{
+    display: flex;
+    margin: 15px 2px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.container .container__content .container__content--experience--content .container__content--experience--content--frontEnd .container__content--experience--content--frontEnd-infor p{
+    margin-left: 20px;
+    margin-right: 4px;
+}
+
+.container .container__content .container__content--experience--content .container__content--experience--content--frontEnd .container__content--experience--content--frontEnd-infor button{
+    background-color: #009688;
+    border: none;
+    padding: 1.5px 7px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.container .container__content .container__content--experience--content .container__content--experience--content--frontEnd > p{
+    line-height: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.container .container__content .container__content--experience--content .container__content--experience--content--webDev i{
+    margin: 15px 2px;
+    font-size: 18px;
+}
+
+.container .container__content .container__content--experience--content .container__content--experience--content--webDev span{
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.container .container__content .container__content--experience--content .container__content--experience--content--webDev p{
+    line-height: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.container .container__content .container__content--experience--content .container__content--experience--content--graphicDesign i{
+    margin: 15px 2px;
+    font-size: 18px;
+}
+
+.container .container__content .container__content--experience--content .container__content--experience--content--graphicDesign span{
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.container .container__content .container__content--experience--content .container__content--experience--content--graphicDesign p{
+    line-height: 25px;
+}
+
+/* Education */
+.container .container__content .container__content--education{
+    /* background-color: orange; */
+    flex: 1;
+    height: auto;
+    box-shadow: 3px 5px 20px 5px #ccc;
+    padding-top: 28px;
+}
+/* Education-Heading */
+.container .container__content .container__content--education--heading{
+    display: flex;
+    margin-left: 20px;
+}
+
+.container .container__content .container__content--education--heading i{
+    font-size: 37px;
+    margin-right: 25px;
+}
+
+.container .container__content .container__content--education--heading h1{
+    font-weight: 500;
+    background: linear-gradient(to top right, rgb(213, 92, 112), purple);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Education-Content */
+.container .container__content .container__content--education--content{
+    margin: 45px 35px;
+}
+
+.container .container__content .container__content--education--content .container__content--education--content--web3 i{
+    margin: 15px 2px;
+    font-size: 18px;
+}
+
+.container .container__content .container__content--education--content .container__content--education--content--web3 span{
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.container .container__content .container__content--education--content .container__content--education--content--web3 p{
+    line-height: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.container .container__content .container__content--education--content .container__content--education--content--london i{
+    margin: 15px 2px;
+    font-size: 18px;
+}
+
+.container .container__content .container__content--education--content .container__content--education--content--london span{
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.container .container__content .container__content--education--content .container__content--education--content--london p{
+    line-height: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.container .container__content .container__content--education--content .container__content--education--content--school i{
+    margin: 15px 2px;
+    font-size: 18px;
+}
+
+.container .container__content .container__content--education--content .container__content--education--content--school span{
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.container .container__content .container__content--education--content .container__content--education--content--school p{
+    line-height: 25px;
+}
+
+/* Footer */
+.footer{
+    background-color: #009688;
+    width: 100%;
+    height: 140px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.footer p a{
+    /* text-decoration: none; */
+    color: #fff;
+}
+
+.footer:hover{
+    background: linear-gradient(to bottom right, rgb(68, 145, 77), rgb(166, 78, 206));
+}
+
+.footer .footer__icon i:hover{
+    color: #54b8ae;
+    cursor: pointer;
+}
+
